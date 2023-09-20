@@ -1,0 +1,191 @@
+body{
+    font-family: 'Merriweather';font-size: 22px;
+    margin: 0;
+    -ms-overflow-style: none;  /* IE and Edge */
+    scrollbar-width: none;
+    color: white;
+    
+    background-color: #2b4162;
+    background-image: linear-gradient(315deg, #2b4162 0%, #12100e 74%);
+    
+}
+body::-webkit-scrollbar{
+  display: none;
+}
+#heading-content {
+    height: 25%;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    position: relative;
+}
+#profile {
+    position: absolute;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+#profile-pic {
+    display: inline-block;
+    width: 200px;
+    height: 200px;
+    border-radius: 50%;
+    object-fit: cover;
+    background-image: url('./profile-pic.jpeg');
+    margin-top: 15px;
+}
+.card {
+    /* Add shadows to create the "card" effect */
+    display: flex;
+    border-radius: 15px;
+    margin: 30px;
+    box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
+    transition: 0.3s;
+    flex-wrap: wrap;
+    overflow-x: auto;
+    overflow-y: hidden;
+    background-color: #6daddb;
+    background-image: linear-gradient(315deg, #6daddb 0%, #313131 74%); 
+  }
+  
+
+  /* On mouse-over, add a deeper shadow */
+  .card:hover {
+    box-shadow: 0 8px 16px 0 hsla(239, 94%, 14%, 1);
+  }
+  .card-header {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    padding: 15px;
+    
+}
+
+/*.header-content{
+  background: rgba( 246, 190, 0, 0.25 );
+box-shadow: 0 8px 32px 0 rgba( 31, 38, 135, 0.37 );
+backdrop-filter: blur( 4px );
+-webkit-backdrop-filter: blur( 4px );
+border-radius: 10px;
+border: 1px solid rgba( 255, 255, 255, 0.18 );
+}*/
+h2{
+    display: flex;
+    padding: 50px;
+    width: 250px;
+    font-size: xxx-large;
+    /*color: #F6BE00;*/
+    justify-content: center;
+    align-items: center;
+}
+
+.vl {
+  display: flex;
+  border-left: 6px solid;
+  background-color: #ffffff;
+  background-image: linear-gradient(315deg, #ffffff 0%, #5899e2 74%);
+  height: 350px;
+  position: relative;
+  margin: 25px;
+  top: 0;
+}
+.content{
+  margin: 50px;
+  line-height: 50px;
+}
+
+#links {
+    position: relative;
+    margin-top: -30px;
+}
+#banner {
+    width: 110%;
+    height: 400px;
+}
+table {
+  display: flex;
+  flex-wrap: wrap;
+  overflow: scroll;
+  position: absolute;
+  border-collapse: separate;
+  border-spacing: 0 15px;
+  -ms-overflow-style: none;  /* IE and Edge */
+  scrollbar-width: none;
+}
+table::-webkit-scrollbar{
+  display: none;
+}
+.skills {
+  margin: 0 0 5px 0;
+	list-style: none;
+	padding: 20px 0;
+	position: relative;
+	color: var(--w2);
+  text-align: left;
+}
+progress {
+  -webkit-appearance: none;
+}
+::-webkit-progress-value {
+  background-color: #6daddb;
+background-image: linear-gradient(315deg, #6daddb 0%, #313131 74%);
+}
+
+.inner-card, .inner-card-no-rotate {
+   /* Add shadows to create the "card" effect */
+  display: flex;
+  border-radius: 15px;
+  margin: 30px;
+  box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
+  transition: 0.3s;
+  justify-content: center;
+  align-items: center;
+  padding: 5px;
+  flex-direction: column;
+  perspective: 1000px;
+  transition: transform 0.8s;
+  transform-style: preserve-3d;
+  width: 300px;
+  height: 350px;
+  background-color: #2b4162;
+    background-image: linear-gradient(315deg, #2b4162 0%, #12100e 74%);
+}
+
+.inner-card-no-rotate:hover{
+  
+  box-shadow: 0 8px 16px 0 hsla(239, 94%, 14%, 1);
+}
+.inner-card:hover{
+  box-shadow: 0 8px 16px 0 hsla(239, 94%, 14%, 1);
+  transform: rotateY(180deg);
+}
+
+.card-front, .card-back{
+  display: flex;
+  flex-direction: column;
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  -webkit-backface-visibility: hidden;
+  backface-visibility: hidden;
+}
+
+
+.card-back{
+  text-align: left;
+  transform: rotateY(180deg);
+}
+li::marker {
+  content: counter(list-item) "› ";
+  color: #6daddb;
+}
+a{
+  color: #6daddb;
+}
+
+
